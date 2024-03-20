@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Distance Converter</title>
+</head>
+<body>
+    <script>
+        // Function to convert miles to kilometers
+        function convertMilesToKilometers(miles) {
+            // 1 mile is approximately equal to 1.60934 kilometers
+            return miles * 1.60934;
+        }
+
+        // Main function
+        function main() {
+            // Prompt the user to enter the distance in miles
+            let miles = parseFloat(prompt("Enter the distance in miles:"));
+
+            // Check if the user entered a valid number
+            if (!isNaN(miles)) {
+                // Convert miles to kilometers
+                let kilometers = convertMilesToKilometers(miles);
+
+                // Display the result
+                console.log(miles + " miles is equal to " + kilometers + " kilometers.");
+            } else {
+                // If the user entered an invalid number, display an error message
+                console.log("Invalid input. Please enter a valid number.");
+            }
+        }
+
+        // Run the main function
+        main();
+    </script>
+</body>
+</html>
